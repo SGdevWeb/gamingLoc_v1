@@ -16,4 +16,14 @@ public class LanguageRepository {
         stmt.setString(2,language.getName());
         stmt.executeUpdate();
     }
+
+    public void update(Languages language) {
+    }
+
+    public void delete(Languages language) throws SQLException {
+        PreparedStatement stmt;
+        stmt = DBManager.getInstance().preparedStatement("DELETE FROM languages WHERE acronym = ?");
+        stmt.setString(1,language.getAcronym());
+        stmt.executeUpdate();
+    }
 }

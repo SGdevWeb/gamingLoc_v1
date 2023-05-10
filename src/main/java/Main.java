@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         LanguageDto languageDto = new LanguageDto("LT", "Latin");
         LanguageController languageController = new LanguageController();
-        languageController.createLanguage(languageDto);
+        //languageController.createLanguage(languageDto);
+        languageController.deleteLanguage(languageDto);
     }
 }
