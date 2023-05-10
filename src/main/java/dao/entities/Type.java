@@ -10,6 +10,7 @@ public class Type {
 		this.id = id;
 		this.type = type;
 	}
+	//region GETTER/SETTER
 	public int getId() {
 		return id;
 	}
@@ -25,5 +26,5 @@ public class Type {
 	public void setType(String type) {
 		this.type = type;
 	}
-
+	//endregion
 }

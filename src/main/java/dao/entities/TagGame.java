@@ -10,6 +10,7 @@ public class TagGame {
 		this.gameId = gameId;
 		this.tagId = tagId;
 	}
+	//region GETTER/SETTER
 	public int getGameId() {
 		return gameId;
 	}
@@ -22,5 +23,5 @@ public class TagGame {
 	public void setTagId(int tagId) {
 		this.tagId = tagId;
 	}
-
+	//endregion
 }

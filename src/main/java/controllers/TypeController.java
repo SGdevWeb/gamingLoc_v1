@@ -1,4 +1,4 @@
-package Controllers;
+package controllers;
 
 import dto.TypeDto;
 import services.TypeService;

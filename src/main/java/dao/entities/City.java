@@ -14,6 +14,7 @@ public class City {
         this.cityName = cityName;
     }
 
+    //region GETTER/SETTER
     public int getCityId() {
         return cityId;
     }
@@ -45,4 +46,5 @@ public class City {
     public void setCityName(String cityName) {
         this.cityName = cityName;
     }
+    //endregion
 }

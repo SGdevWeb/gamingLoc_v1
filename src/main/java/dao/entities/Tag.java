@@ -10,6 +10,7 @@ private int id;
 		this.id = id;
 		this.name = name;
 	}
+	//region GETTER/SETTER
 	public int getId() {
 		return id;
 	}
@@ -25,4 +26,5 @@ private int id;
 	public void setName(String name) {
 		this.name = name;
 	}
+	//endregion
 }

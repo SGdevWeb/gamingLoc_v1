@@ -12,7 +12,7 @@ public class Address {
         this.complementaryAddress = complementaryAddress;
         this.city = city;
     }
-
+    //region GETTER/SETTER
     public int getAddressId() {
         return addressId;
     }
@@ -36,5 +36,5 @@ public class Address {
     public void setComplementaryAddress(String complementaryAddress) {
         this.complementaryAddress = complementaryAddress;
     }
-
+    //endregion
 }
