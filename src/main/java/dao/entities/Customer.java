@@ -2,15 +2,16 @@ package dao.entities;
 
 public class Customer {
 
-    int customerId;
-    String firstName;
-    String lastName;
-    String password;
-    String email;
-    String phoneNumber;
-    int addressId;
+    private int customerId;
+    private String firstName;
+    private String lastName;
+    private String password;
+    private String email;
+    private String phoneNumber;
+    private int addressId;
 
-    public Customer(String firstName, String lastName, String password, String email, String phoneNumber) {
+    public Customer(int customerId,String firstName, String lastName, String password, String email, String phoneNumber) {
+        this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
@@ -18,6 +19,7 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
+    //region GETTER/SETTER
     public int getCustomerId() {
         return customerId;
     }
@@ -73,4 +75,5 @@ public class Customer {
     public void setAddressId(int addressId) {
         this.addressId = addressId;
     }
+    //endregion
 }
