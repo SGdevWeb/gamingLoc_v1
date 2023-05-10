@@ -1,2 +1,4 @@
-package dao.repositories;public class CustomerRepository {
+package dao.repositories;
+public class CustomerRepository {
+
 }

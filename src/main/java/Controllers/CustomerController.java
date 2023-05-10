@@ -1,2 +1,5 @@
-package Controllers;public class CustomerController {
+package Controllers;
+
+public class CustomerController {
+
 }
