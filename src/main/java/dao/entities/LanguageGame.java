@@ -1,2 +1,4 @@
-package dao.entities;public class LanguageGame {
+package dao.entities;
+
+public class LanguageGame {
 }
