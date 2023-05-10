@@ -5,10 +5,10 @@ import services.TypeService;
 
 public class TypeController {
 
-	private TypeService typeService = new TypeService();
+	private TypeService service = new TypeService();
 
 	public void createType(TypeDto typeDto) {
 		// verify DTO
-		typeService.createType(typeDto);
+		service.createType(typeDto);
 	}
 }
