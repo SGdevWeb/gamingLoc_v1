@@ -10,6 +10,7 @@ public class Editor {
         this.name = name;
     }
 
+    //region GETTER/SETTER
     public int getEditorId() {
         return editorId;
     }
@@ -25,4 +26,5 @@ public class Editor {
     public void setName(String name) {
         this.name = name;
     }
+    //endregion
 }

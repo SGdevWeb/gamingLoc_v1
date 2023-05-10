@@ -10,6 +10,7 @@ public class Languages {
         this.name = name;
     }
 
+    //region GETTER/SETTER
     public String getAcronym() {
         return acronym;
     }
@@ -25,4 +26,5 @@ public class Languages {
     public void setName(String name) {
         this.name = name;
     }
+    //endregiongit addg
 }

@@ -10,6 +10,7 @@ public class LanguageGame {
         this.acronym = acronym;
     }
 
+    //region GETTER/SETTER
     public int getGameId() {
         return gameId;
     }
@@ -25,4 +26,6 @@ public class LanguageGame {
     public void setAcronym(String acronym) {
         this.acronym = acronym;
     }
+    //endregion
+
 }
