@@ -8,15 +8,16 @@ public class Customer {
     private String password;
     private String email;
     private String phoneNumber;
-    private int addressId;
+    private Address address;
 
-    public Customer(int customerId,String firstName, String lastName, String password, String email, String phoneNumber) {
+    public Customer(int customerId,String firstName, String lastName, String password, String email, String phoneNumber, Address address) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     //region GETTER/SETTER
@@ -66,14 +67,6 @@ public class Customer {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-    }
-
-    public int getAddressId() {
-        return addressId;
-    }
-
-    public void setAddressId(int addressId) {
-        this.addressId = addressId;
     }
     //endregion
 }
