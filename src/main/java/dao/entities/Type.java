@@ -15,6 +15,10 @@ public class Type {
 		this.name = name;
 	}
 
+	public Type(int id) {
+		this.id = id;
+	}
+
 	//region GETTER/SETTER
 	public int getId() {
 		return id;

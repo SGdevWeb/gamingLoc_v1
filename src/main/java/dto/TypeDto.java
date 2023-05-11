@@ -3,9 +3,11 @@ package dto;
 public class TypeDto {
 
 	private String name;
+	private int id;
 
-	public TypeDto(String name) {
+	public TypeDto(String name, int id) {
 		this.name = name;
+		this.id = id;
 	}
 	
 	public String getName() {
@@ -14,6 +16,14 @@ public class TypeDto {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 }
