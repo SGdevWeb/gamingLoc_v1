@@ -15,4 +15,5 @@ public class TypeDto {
 	public void setType(String type) {
 		this.type = type;
 	}
+
 }

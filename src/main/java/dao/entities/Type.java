@@ -1,7 +1,7 @@
 package dao.entities;
 
 public class Type {
-	
+
 	private int id;
 	
 	private String type;
@@ -10,6 +10,11 @@ public class Type {
 		this.id = id;
 		this.type = type;
 	}
+
+	public Type(String type) {
+		this.type = type;
+	}
+
 	//region GETTER/SETTER
 	public int getId() {
 		return id;
