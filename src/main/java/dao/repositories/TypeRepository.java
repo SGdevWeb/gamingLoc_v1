@@ -11,9 +11,8 @@ public class TypeRepository {
 	
 	public void create(@NotNull Type type) throws SQLException {
 		PreparedStatement stmt;
-		stmt = DBManager.getInstance().preparedStatement("INSERT INTO type VALUES(?,?)");
-		stmt.setInt(1, type.getId());
-		stmt.setString(2, type.getType());
+		stmt = DBManager.getInstance().preparedStatement("INSERT INTO type (name) VALUES(?)");
+		stmt.setString(1, type.getName());
 		stmt.executeUpdate();
 	}
 

@@ -11,7 +11,7 @@ public class TypeService {
 	private TypeRepository typeRepository = new TypeRepository();
 
 	public void createType(TypeDto typeDto) throws SQLException {
-		Type type = new Type(typeDto.getType());
+		Type type = new Type(typeDto.getName());
 
 		typeRepository.create(type);
 	}

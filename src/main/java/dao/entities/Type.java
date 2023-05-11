@@ -4,15 +4,15 @@ public class Type {
 
 	private int id;
 	
-	private String type;
+	private String name;
 	
-	public Type(int id, String type) {
+	public Type(int id, String name) {
 		this.id = id;
-		this.type = type;
+		this.name = name;
 	}
 
-	public Type(String type) {
-		this.type = type;
+	public Type(String name) {
+		this.name = name;
 	}
 
 	//region GETTER/SETTER
@@ -24,12 +24,12 @@ public class Type {
 		this.id = id;
 	}
 
-	public String getType() {
-		return type;
+	public String getName() {
+		return name;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setName(String name) {
+		this.name = name;
 	}
 	//endregion
 }
