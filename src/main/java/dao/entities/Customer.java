@@ -17,6 +17,8 @@ public class Customer {
         this.password = password;
         this.email = email;
         this.phoneNumber = phoneNumber;
+
+
     }
 
     //region GETTER/SETTER
