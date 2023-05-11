@@ -5,6 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import singleton.DBManager;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class LanguageRepository {
@@ -17,7 +18,12 @@ public class LanguageRepository {
         stmt.executeUpdate();
     }
 
-    public void update(Languages language) {
+    public void update(Languages language) throws SQLException {
+        PreparedStatement stmt;
+        stmt = DBManager.getInstance().preparedStatement("UPDATE languages SET name = ? WHERE acronym = ?");
+        stmt.setString(1, language.getName());
+        stmt.setString(2,language.getAcronym());
+        stmt.executeUpdate();
     }
 
     public void delete(Languages language) throws SQLException {
@@ -25,5 +31,12 @@ public class LanguageRepository {
         stmt = DBManager.getInstance().preparedStatement("DELETE FROM languages WHERE acronym = ?");
         stmt.setString(1,language.getAcronym());
         stmt.executeUpdate();
+    }
+
+    public ResultSet read(Languages language) throws SQLException {
+        PreparedStatement stmt;
+        stmt = DBManager.getInstance().preparedStatement("SELECT * FROM languages WHERE acronym = ?");
+        stmt.setString(1,language.getAcronym());
+        return stmt.executeQuery();
     }
 }

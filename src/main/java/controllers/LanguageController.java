@@ -3,6 +3,7 @@ package controllers;
 import dto.LanguageDto;
 import services.LanguageService;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class LanguageController {
@@ -19,12 +20,26 @@ public class LanguageController {
     
     public void updateLanguage(LanguageDto languageDto){
         //verifier DTO
-        service.updateLanguage(languageDto);
+        try {
+            service.updateLanguage(languageDto);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void deleteLanguage(LanguageDto languageDto){
+        //verifier DTO
         try {
             service.deleteLanguage(languageDto);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public LanguageDto readLanguage(String languageAcronyme){
+        //verifier DTO
+        try {
+            return service.readLanguage(languageAcronyme);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
